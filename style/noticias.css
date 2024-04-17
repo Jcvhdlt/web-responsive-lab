@@ -1,0 +1,36 @@
+.noticia {
+    margin: 10px;
+    background-color: rgb(217, 221, 234);
+    width: 40vw;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.noticia div {
+    background-color: whitesmoke;
+    width: 95%;
+    padding: 10px;
+  
+}
+
+.noticia div p {
+    display: inline;
+}
+
+.noticia img {
+    display: block;
+    width: 90%;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .noticia {
+        width: 80vw;
+    }
+    .noticia div {
+        width: 90%;
+    }
+}

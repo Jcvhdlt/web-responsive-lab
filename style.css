@@ -4,6 +4,15 @@
 a {
     text-decoration: none;
 }
+
+body{
+    margin: 0;
+}
+
+body p{
+    margin:50px;
+}
+
 .entrada p{
     margin:5px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -56,9 +65,7 @@ nav ul li:hover {
 }
 
 
-body{
-    margin: 0;
-}
+
 
 
 .img-index{
@@ -93,7 +100,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     bottom: 0;
-    position: fixed;
     width: 100%;
 }
 .footer-logo {
@@ -120,3 +126,4 @@ footer {
     height: auto;
    
 }
+
