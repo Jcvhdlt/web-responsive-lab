@@ -5,6 +5,9 @@ a {
     text-decoration: none;
 }
 
+.titulo{
+    color: white;
+}
 body{
     margin: 0;
 }
