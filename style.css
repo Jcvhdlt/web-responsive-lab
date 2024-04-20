@@ -28,7 +28,7 @@ header {
     font-style: normal;
     text-align: center;
     padding: 40px;
-    background-color: rgba(15, 24, 41, 0.904);
+    background-color: rgba(6, 28, 70, 0.904);
     position: relative;
 }
 
@@ -68,7 +68,12 @@ nav ul li:hover {
 }
 
 
-
+.img-noticias{
+    background-image: url(../img/noticias-img/fondo-noticias.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
 
 .img-index{
