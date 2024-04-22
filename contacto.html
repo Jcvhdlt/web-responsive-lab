@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/contacto.css">
+    <title>Contacto</title>
 </head>
 <header>
     
@@ -42,18 +43,24 @@
 </header>
 
 <body>
-    <form>
-        <legend>Soy un formulario</legend>
-        <fieldset>
-            Email: <input type="email">
-            <br> Nombre: <input type="nombre">
-            <br>Teléfono: <input type="tel">
-            <br>Escribe algo<br><textarea id="texto_grande" name="texto_grande" rows="4" cols="50" placeholder="Hey!"></textarea><br>
-            <br><input type="submit">
-        </fieldset>
-    </form>
 
-
+    <div class="formulario">
+        <h2>¡Contacta con nosotros!</h2>
+        <form>
+           
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <label for="texto_grande">Escribe algo:</label>
+                <textarea id="texto_grande" name="texto_grande" rows="4" cols="50" placeholder="Hey!"></textarea>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+        
+        </form>
+    </div>
 </body>
 
  <!--- FOOTER (PIE DE PÁGINA)-->

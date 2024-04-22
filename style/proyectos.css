@@ -1,0 +1,70 @@
+/*Página de Investigación*/
+
+.proyecto1{
+    font-family: "Roboto", sans-serif;
+}
+
+.proyecto1 h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+.proyecto1 h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+.proyecto1 h3{
+    text-align: center;
+    font-size: 26px;
+}
+
+.proyecto {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    padding: 0PX;
+}
+
+.proyecto img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+.proyecto p{
+    text-align: left;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.instituciones-titulo {
+    text-align: center;
+    text-align: 32px;
+}
+
+.botones-lista {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.boton {
+    display: inline-block;
+    background-color: rgba(6, 28, 70, 0.904);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    margin:10px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.boton:hover {
+    background-color: #45a049; 
+}
