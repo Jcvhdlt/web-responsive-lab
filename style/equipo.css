@@ -1,14 +1,23 @@
-.opinion {
-    width: 300px;
+.comentario{
+    background-color: white;
+    font-size:1.2em;
+    padding:5px;
+    font-style: italic;
+   
+}
+
+.equipo div, .opinion {
+    
+    width: 200px;
+    height: auto;
     background-color: #f0f0f0;
     border-radius: 10px;
     padding: 20px;
-    text-align: center;
     display: inline-block;
     margin: 10px;
 }
 
-.opinion img {
+.equipo div img, .opinion img {
     width: 150px;
     height: 150px;
     border-radius: 50%; /* Hace que la foto sea circular */
@@ -16,8 +25,21 @@
     border: 5px solid black;
 }
 
-.opinion p{
+.equipo div p, .opinion p{
     font-size: 16px;
     color: #333;
     line-height: 1.5;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .equipo div, .estudiantes div{
+        width:60vw; 
+       
+    }
+
+  
 }
