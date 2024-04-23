@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="style/contacto.css">
+    <link rel="shortcut icon" href="img/iconos footer/wave_4790145.png" type="image/x-icon">
     <title>Contacto</title>
 </head>
    <!--- HEADER (CABECERA DE LA PÁGINA)-->
@@ -52,8 +53,20 @@
                 <input type="text" id="nombre" name="nombre" required>
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono">
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                <option value="chile" >Chile</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Paraguay</option>
+                <option value="espana">España</option>
+                <option value="mexico">México</option>
+                </select>
                 <label for="texto_grande">Escribe algo:</label>
                 <textarea id="texto_grande" name="texto_grande" rows="4" cols="50" placeholder="Hey!"></textarea>
+                <label for="terminos">
+                <input type="checkbox" id="terminos" name="condiciones" required>
+                Acepto los términos y condiciones
+                </label>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Borrar">
         

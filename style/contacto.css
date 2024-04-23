@@ -10,6 +10,8 @@
 .formulario h2{
     text-align: center;
     font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 form {

@@ -31,7 +31,11 @@
     line-height: 1.5;
 }
 
-
+.equipo h1{
+    font-size: 64px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 @media (max-width: 600px) {
