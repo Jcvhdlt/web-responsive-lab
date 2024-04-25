@@ -91,7 +91,7 @@ header {
     font-family: "Roboto", sans-serif;
     text-align: right;
     min-height: 100px;
-    padding: 40px;
+    padding: 20px 20vw 20px;
     background-color: rgb(234, 229, 229)
     /* background-image: url(img/noticias-img/foca.jpg);
     background-attachment: fixed;
@@ -206,7 +206,6 @@ nav ul li:hover ul {
 }
 
 .body-index aside {
-
     list-style-type: circle;
     background-color:  rgba(255, 255, 255, 0.5);
     float: right;
@@ -215,7 +214,7 @@ nav ul li:hover ul {
     padding: 10px;
     vertical-align: top;
     max-width: 25%;
-    min-height: 800px;
+    height: auto;
     width: auto;
     background-color:rgb(234, 229, 229);
 }
@@ -224,7 +223,6 @@ nav ul li:hover ul {
     margin: 10px;
     width: 60%;
     display: inline-block;
-    overflow: hidden;
 }
 
 section {
@@ -233,13 +231,11 @@ section {
     width: 60%;
     margin: 10px;
     padding: 10px;
-}
-
-section#main-sec{
-    width: 60%;
     max-width: 1000px;
     background-color: rgba(255, 255, 255, 0.8);
 }
+
+
 
 /* Estilos del footer */
 footer {
@@ -313,18 +309,63 @@ footer {
     color: rgb(107, 107, 107);
 }
 
-  @media (max-width: 800px) {
+.ocultar-big-screen{
+    display: none;
+}
+
+
+/* CUANDO EL ANCHO DE LA PANTALLA BAJA DE 800 PÍXELES DE ANCHO*/
+@media (max-width: 800px) {
+
+    
 
     aside{
-        display: none; 
+        display: none;
     }
 
-    #div-2{
-        width: 90vw; 
+    aside.papers li{
+        display: inline; 
+       
     }
 
-    #div-3{
-        min-width: 300px; 
+    .body-index section{
+        width: 90%;
+        display: block;
+        margin: 3%;
     }
+
+    #grid-container:hover div img{
+        opacity: 0.3;
+       
+    }
+
+    #grid-container div img:hover{
+        transform: scale(2.1);
+        opacity: 1;
+    }
+
+   
+
+    #main-sec p{
+        margin: 1%;
+    }
+
+    header{
+        padding: 20px 1% 20px 10%;
+    }
+
+    nav{
+        position: static;
+    }
+
+
+    .ocultar-big-screen{
+        display:inline-block;
+    }
+
+    .ocultar-small-screen{
+        display:none;
+    }
+
 
 }
