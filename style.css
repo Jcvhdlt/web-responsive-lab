@@ -168,6 +168,7 @@ nav ul li a {
 nav ul li:hover {
     font-size: 1.3em; /* Tamaño de fuente aumentado en hover */
     background-color: #ddd; /* Color de fondo en hover - neutro */
+    border-radius: 20px;
 }
 
 nav ul li ul {
@@ -240,7 +241,6 @@ section#main-sec{
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-
 /* Estilos del footer */
 footer {
     background-color: #ddd; /* Color de fondo en hover - neutro */
@@ -289,54 +289,12 @@ footer {
     height: auto;
 }
 
-
-/*Página de calendario*/
-
-.table{
-    text-align: center;
-    margin: auto;
-    font-family: "Roboto", sans-serif;
-}
-
-.table h2{
-    font-size: 48px;
-}
-
-.table table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 50px;
-    height: 200px;
-    width: 800px;
-  }
-.table th, td {
-    border: 1px solid black;
-    padding: 12px;
-    font-size: 16px;
-    text-align: center;
-  }
-.table  th {
-    background-color: rgba(15, 24, 41, 0.904);
-    color: white;
-    font-size: 22px;
-  }
-
-.table a{
-    color: black;
-}
-
-.table a:hover{
-    color: rgba(15, 24, 41, 0.904);
-}
-
-
-
 .papers{
     display: block;
     list-style-type: none;
     text-align: left;
+    padding-right: 25px;
 }
-
 
 .papers li{
     border-bottom: 3px solid rgb(67, 83, 147);

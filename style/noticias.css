@@ -19,8 +19,8 @@
     margin: 20px;
     background-color: #fff;
     border-radius: 10px;
-    width: 400px;
-    height: 380px;
+    width: 470px;
+    height: 440px;
     flex: 0 1 calc(30% - 40px);  /*El tamaño inicial del elemento es de 30%. Y se le restan 40px para darle espacio adicional a dicho elemento*/
     /*Por otro lado, flex 1 indica que el elemento puede contraerse para ajustarse en el espacio disponible dentro del contenedor flex*/
     margin-bottom: 100px;
@@ -48,7 +48,7 @@
 }
 
 .noticia div {
-    padding: 15px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 768px) {

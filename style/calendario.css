@@ -12,10 +12,8 @@
 }
 
 .table table {
-    width: 100%;
+    background-color: whitesmoke;
     border-collapse: collapse;
-    margin-bottom: 50px;
-    height: 200px;
     width: 800px;
   }
 
@@ -42,8 +40,8 @@
 
 .maps{
     display: block;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: space-between;
+    margin-top: 40px;
     margin-bottom: 40px;
     
   }
