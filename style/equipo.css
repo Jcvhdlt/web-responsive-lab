@@ -5,8 +5,8 @@ body{
 
 
 .equipo{
-    margin: 10px;
-    width: 90%;
+   
+    width: 90vw;
 }
 
 .equipo div, .opinion {
@@ -36,11 +36,7 @@ body{
     line-height: 1.5;
 }
 
-.equipo h1{
-    font-size: 64px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
 
 /*Para evitar saturar la página de contenido, facilitaremos el acceso a la tesis cambiando el display*/
 #tesista .tesis, #tesista:hover .comentario, #tesista:hover img{

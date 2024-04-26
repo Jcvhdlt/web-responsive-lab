@@ -199,7 +199,7 @@ nav ul li:hover ul {
 
 
 .body-index{
-    background-image: url(img/sea-blue-sky-background.jpg);
+   
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -226,7 +226,6 @@ nav ul li:hover ul {
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.5);
     display: inline-block;
     width: 60%;
     margin: 10px;
@@ -283,6 +282,47 @@ footer {
 .footer-social a img {
     max-width: 30px;
     height: auto;
+}
+
+.index-section{
+    width: 90vw;
+    max-width: 1500px;
+}
+
+.titular-section{
+    width:100%;
+}
+
+.titular-section h2{
+    background-image: url(img/noticias-img/foca.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    font-size: 3em;
+    padding-top:40px;
+    font-weight: 150px;
+    color: white;
+  
+}
+
+.titular-section #linea{
+    width: 75%;
+    height: 2px;
+    background-color: rgb(170, 187, 198);
+    position: relative;
+    top: -50px;
+}
+
+.index-section h4{
+    font-size: 1.5em;
+    color: rgb(135, 140, 161);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.index-section p{
+    font-size: 1.2em;
+
 }
 
 .papers{
