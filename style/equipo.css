@@ -1,28 +1,33 @@
-.comentario{
-    background-color: white;
-    font-size:1.2em;
-    padding:5px;
-    font-style: italic;
-   
+body{
+    padding: 0px;
+}
+
+
+
+.equipo{
+    margin: 10px;
+    width: 90%;
 }
 
 .equipo div, .opinion {
-    
-    width: 200px;
+    display: inline-block;
+    width : 250px;
     height: auto;
     background-color: #f0f0f0;
     border-radius: 10px;
     padding: 20px;
-    display: inline-block;
+    vertical-align: top;
     margin: 10px;
+    
 }
 
 .equipo div img, .opinion img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Hace que la foto sea circular */
+    border-radius: 50%; 
     margin-bottom: 20px;
-    border: 5px solid black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease 0s;
 }
 
 .equipo div p, .opinion p{
@@ -37,7 +42,53 @@
     margin-bottom: 10px;
 }
 
+/*Para evitar saturar la página de contenido, facilitaremos el acceso a la tesis cambiando el display*/
+#tesista .tesis, #tesista:hover .comentario, #tesista:hover img{
+    display : none;
+}
 
+#tesista:hover .tesis{
+    display: block;
+}
+
+
+
+
+
+.imagenes-somos{
+    display:flex;
+    justify-content: center;
+}
+
+.imagenes-somos img{
+    margin: 0;
+    max-width: 30vw; 
+    min-width: 300px;
+    width:auto;
+    transition: all 0.5s ease 0s;
+}
+
+.imagenes-somos img:hover{
+    transform: scale(1.1);
+}
+
+
+img {
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.comentario{
+    font-size:1.2em;
+    padding:5px;
+    font-style: italic;
+    max-width: 80%;
+    background-color: rgb(255, 255, 255);
+}
 @media (max-width: 600px) {
 
     .equipo div, .estudiantes div{

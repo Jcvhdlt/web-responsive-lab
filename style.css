@@ -206,11 +206,6 @@ nav ul li:hover ul {
 }
 
 .body-index aside {
-<<<<<<< HEAD
-    position: sticky;
-    top: 0;
-=======
->>>>>>> master
     list-style-type: circle;
     background-color:  rgba(255, 255, 255, 0.5);
     float: right;
