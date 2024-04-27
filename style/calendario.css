@@ -11,10 +11,10 @@
     margin-top: 30px;
 }
 
-.table table {
-    background-color: whitesmoke;
+.table {
+  
     border-collapse: collapse;
-    width: 800px;
+ 
   }
 
 .table th, td {

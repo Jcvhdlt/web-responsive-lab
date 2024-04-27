@@ -48,24 +48,30 @@ body{
 }
 
 
-
-
-
-.imagenes-somos{
-    display:flex;
-    justify-content: center;
+.imagenes-somos {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .imagenes-somos div {
+    width: 30vw;
+    height: 200px;
+    overflow: hidden; /* Oculta el contenido que sobresale del contenedor */
+    margin: -5px; 
+    transition: all 0.5s ease 0.1s;
+  }
+  
+  .imagenes-somos img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Establece la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Recorta la imagen para que se ajuste al contenedor sin deformarla */
+    
 }
 
-.imagenes-somos img{
-    margin: 0;
-    max-width: 30vw; 
-    min-width: 300px;
-    width:auto;
-    transition: all 0.5s ease 0s;
-}
+.imagenes-somos div:hover{
+    transform: scale(1.3);
+    z-index: 11;
 
-.imagenes-somos img:hover{
-    transform: scale(1.1);
 }
 
 

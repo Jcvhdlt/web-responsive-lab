@@ -1,7 +1,34 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+
 *{
     font-family: "Roboto", sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #190733; /* Color de los encabezados */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño del encabezado h1 */
+}
+
+h2 {
+    font-size: 2em; /* Tamaño del encabezado h2 */
+}
+
+h3 {
+    font-size: 1.5em; /* Tamaño del encabezado h3 */
+}
+
+h4 {
+    font-size: 1.2em; /* Tamaño del encabezado h4 */
+}
+
 
 a {
     text-decoration: none;
@@ -34,14 +61,18 @@ body p{
     margin:auto;
     width: 50px;
     height: 50px;
-    background-image: url(img/icon/down-arrow.svg);
+    background-image: url(img/icon/left-arrow.svg);
+    transform: rotate(180deg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(245, 240, 240);
     float: left;
     position: relative;
     right: 30px;
- 
+}
+
+#button-show:hover{
+    cursor: pointer;;
 }
 
 .entrada p{
@@ -65,6 +96,7 @@ body p{
 }
 
 #grid-container div img{
+    width: 100%;
     transition: all 0.5s ease 0s;
 }
 
@@ -91,45 +123,52 @@ header {
     font-family: "Roboto", sans-serif;
     text-align: right;
     min-height: 100px;
-    padding: 20px 20vw 20px;
-    background-color: rgb(234, 229, 229)
-    /* background-image: url(img/noticias-img/foca.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%; */
+    padding: 20px 0px 20px 10vw;
+    background-color: rgb(234, 229, 229);
+    display: flex;
+  
+}
+header .logo{
+    float: right;
+    margin-right: 10vw;
+
+    
+}
+
+/*Esto ha sido un experimento raro mío... necesitaba pegar el titulo al logo,
+así que le he desplazado un 10% a la izquierda. Pero como esto provocaba que se
+metiese dentro del logo, le he tenido que ampliar el margen*/
+header > div {
+    position:relative;
+    left: 10%;
+    margin-right: 10%;
 }
 
 header h1, header h2, header h3{
-    margin-right: 20%;
-    color: rgb(35, 34, 34);
+    color: rgb(35, 34, 34)
 }
 
 header h1{
-    font-weight: 250;
+    font-weight: 200;
     font-size: 3em;
 }
 
 header h2{
-    font-weight: 200;
+    font-weight: 50;
     font-size: 2em;
 }
 
-img{
-    max-width: 100%;
-}
 
-.maps{
-    display: inline-block;
+
+iframe, .maps iframe {
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+    max-width: 100%;
+    float: bottom;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 40px;
-  }
-
-iframe, .maps iframe {
-    height: 300px;
-    width: 500px;
-    border-radius: 10px;
-    max-width: 100%;
 }
 
 
@@ -142,6 +181,7 @@ nav {
     font-family: Arial, sans-serif; /* Fuente neutral */
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 nav ul {
@@ -207,7 +247,6 @@ nav ul li:hover ul {
 
 .body-index aside {
     list-style-type: circle;
-    background-color:  rgba(255, 255, 255, 0.5);
     float: right;
     margin: 10px;
     margin-right: 5%;
@@ -217,22 +256,19 @@ nav ul li:hover ul {
     height: auto;
     width: auto;
     background-color:rgb(234, 229, 229);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .body-index section{
     margin: 10px;
-    width: 60%;
+    width: 65%;
     display: inline-block;
+    padding-top: 30px;
 }
 
-section {
-    display: inline-block;
-    width: 60%;
-    margin: 10px;
-    padding: 10px;
-    max-width: 1000px;
-    background-color: rgba(255, 255, 255, 0.8);
-}
+
 
 
 
@@ -242,28 +278,32 @@ footer {
     color: #fff; /* Texto en color blanco */
     padding: 20px; /* Aumentado el relleno para más espacio */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    
 }
 
 /* Estilos del logo en el footer */
-.footer-logo {
-    display: flex;
-    align-items: center;
+.logo {
+    max-width: 200px;
 }
 
-.footer-logo img {
-    max-width: 40px;
+.footer-social a img {
+    max-width: 30px;
     height: auto;
-    margin-right: 30px;
+    margin-right: 5px;
+    transition: all 0.2 ease 0;
 }
 
-.footer-logo p {
-    margin: 0;
-    font-weight: bold; 
-    font-size: 16px;
+.footer-social a img:hover {
+    transform:scale(1.2);
 }
+
+
 
 .footer-links a {
     color: rgb(35, 34, 34);
@@ -271,72 +311,64 @@ footer {
     margin-right: 10px;
 }
 
-.footer-social {
-    margin: auto; 
-}
-
-.footer-social a {
-    margin-right: 10px;
-}
-
-.footer-social a img {
-    max-width: 30px;
-    height: auto;
-}
 
 .index-section{
     width: 90vw;
     max-width: 1500px;
+    
 }
 
 .titular-section{
     width:100%;
-}
-
-.titular-section h2{
     background-image: url(img/noticias-img/foca.jpg);
+    background-position: 0px -200px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 150px;
-    font-size: 3em;
-    padding-top:40px;
-    font-weight: 150px;
-    color: white;
-  
+    height: 250px;
 }
 
-.titular-section #linea{
-    width: 75%;
-    height: 2px;
-    background-color: rgb(170, 187, 198);
-    position: relative;
-    top: -50px;
+.titular-section h2{
+    width: 80%;
+    font-size: 3em;
+    padding-top:40px;
+    padding-bottom: 30px;
+    font-weight: 150px;
+    color: white;
+    border-bottom: 3px groove rgb(202, 217, 222);
+}
+
+
+#section-1{
+    height: 600px;
+    
 }
 
 .index-section h4{
     font-size: 1.5em;
     color: rgb(135, 140, 161);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 }
 
 .index-section p{
     font-size: 1.2em;
-
+   
 }
 
 .papers{
     display: block;
     list-style-type: none;
     text-align: left;
-    padding-right: 25px;
+    padding-right: 5px;
 }
 
 .papers li{
     border-bottom: 3px solid rgb(67, 83, 147);
     padding: 10px;
-    margin: 10px 5px 30px;
-    
+    margin: 10px -10px 30px;
+    width: 100%;
+    font-size: 0.9em;
 }
 
 .papers li a{
@@ -354,8 +386,9 @@ footer {
 }
 
 
+
 /* CUANDO EL ANCHO DE LA PANTALLA BAJA DE 800 PÍXELES DE ANCHO*/
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
 
     
 
@@ -368,19 +401,33 @@ footer {
        
     }
 
+    #section-1{
+        height: auto;
+    }
+
     .body-index section{
         width: 90%;
         display: block;
         margin: 3%;
     }
 
+
+    #grid-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #grid-container div img{
+        max-width: 300px;
+        
+    }
+
     #grid-container:hover div img{
         opacity: 0.3;
-       
     }
 
     #grid-container div img:hover{
-        transform: scale(2.1);
+        transform: scale(1.1);
         opacity: 1;
     }
 
@@ -390,8 +437,10 @@ footer {
         margin: 1%;
     }
 
-    header{
-        padding: 20px 1% 20px 10%;
+    
+
+    header h1, header h2, header h3{
+        margin-left: 0%;
     }
 
     nav{
@@ -407,5 +456,25 @@ footer {
         display:none;
     }
 
+    .table{
+        width: 100%;
+    }
+
+    .table table{
+        margin: 2%;
+    }
+
+    .table th, .table td{
+        border: 1px solid black;
+        padding: 12px;
+        font-size: 16px;
+        text-align: center;
+        max-width: 100px;
+      }
+
+    
+    .titular-section{
+        background-position: 0px 0px;
+    }
 
 }
