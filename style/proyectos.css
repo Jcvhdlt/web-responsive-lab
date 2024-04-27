@@ -37,6 +37,13 @@
     display: block;
     margin: 0 auto 20px;
     border-radius: 10px;
+    
+}
+.efecto-foto {
+    transition: transform 0.5s ease;
+}
+.efecto-foto:hover {
+    transform: scale(1.6);
 }
 
 .proyecto p{
