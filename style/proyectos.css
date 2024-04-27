@@ -1,27 +1,22 @@
 /*Página de Investigación*/
-
 .proyecto1{
     font-family: "Roboto", sans-serif;
 }
-
 .proyecto1 h1{
     text-align: center;
     font-size: 48px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 .proyecto1 h2{
     text-align: center;
     font-size: 36px;
     margin-bottom: 20px;
 }
-
 .proyecto1 h3{
     text-align: center;
     font-size: 26px;
 }
-
 .proyecto {
     display: flex;
     max-width: 1200px;
@@ -29,7 +24,6 @@
     font-family: "Roboto", sans-serif;
     padding: 0PX;
 }
-
 .proyecto img {
     width: 90%;
     max-width: 500px;
@@ -37,7 +31,6 @@
     display: block;
     margin: 0 auto 20px;
     border-radius: 10px;
-    
 }
 .efecto-foto {
     transition: transform 0.5s ease;
@@ -45,36 +38,33 @@
 .efecto-foto:hover {
     transform: scale(1.6);
 }
-
 .proyecto p{
     text-align: left;
     font-size: 18px;
     text-align: justify;
 }
-
 .instituciones-titulo {
     text-align: center;
     text-align: 32px;
 }
-
-.botones-lista {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+.imagenes-instituciones {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.imagenes-instituciones div {
+    width: 30vw;
+    height: 200px;
+    overflow: hidden;
+    margin: -5px; 
+    transition: all 0.5s ease 0.1s;
+}
+.imagenes-instituciones img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+.imagenes-instituciones a img:hover {
+        transform:scale(1.2);
 }
 
-.boton {
-    display: inline-block;
-    background-color: rgba(6, 28, 70, 0.904);
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 22px;
-    margin:10px;
-    border-radius: 10px; /* Bordes redondeados */
-}
-
-.boton:hover {
-    background-color: #45a049; 
-}
