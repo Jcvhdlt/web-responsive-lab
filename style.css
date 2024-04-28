@@ -279,7 +279,7 @@ nav ul li:hover ul {
 footer {
     background-color: #ddd; /* Color de fondo en hover - neutro */
     color: #fff; /* Texto en color blanco */
-    padding: 20px; /* Aumentado el relleno para más espacio */
+    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -384,7 +384,7 @@ footer {
     color: rgb(107, 107, 107);
 }
 
-.ocultar-big-screen{
+.ocultar-big-screen, .mostrar-moviles{
     display: none;
 }
 
@@ -394,7 +394,6 @@ footer {
 @media (max-width: 1050px) {
 
     
-
     aside{
         display: none;
     }
@@ -434,7 +433,10 @@ footer {
         opacity: 1;
     }
 
-   
+   .index-section p, .index-section h4{
+       text-align: left;
+        margin: 2%;
+   }
 
     #main-sec p{
         margin: 1%;
@@ -444,6 +446,10 @@ footer {
 
     header h1, header h2, header h3{
         margin-left: 0%;
+    }
+
+    header h2{
+        font-size: 1.5em;
     }
 
     nav{
@@ -477,7 +483,26 @@ footer {
 
     
     .titular-section{
-        background-position: 0px 0px;
+        background-position: 0px -200px;
+        /*Al haber cambiado su posición, necesitamos que se repita en la Y, esto está pensado para móvil, no para PC*/
+        background-repeat:repeat-y;
+    }
+
+
+}
+
+/*Solo para móviles*/
+@media (max-width: 500px) {
+    .mostrar-moviles{
+        display:block;
+    }
+
+    .mostrar-moviles li ul{
+        position: relative;
+    }
+
+    .ocultar-moviles{
+        display:none;
     }
 
 }
