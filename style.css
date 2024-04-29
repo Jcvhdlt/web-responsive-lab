@@ -9,24 +9,24 @@
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    color: #190733; /* Color de los encabezados */
-    letter-spacing: 1px; /* Espaciado entre letras */
+    color: #190733; 
+    letter-spacing: 1px; 
 }
 
 h1 {
-    font-size: 2.5em; /* Tamaño del encabezado h1 */
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: 2em; /* Tamaño del encabezado h2 */
+    font-size: 2em; 
 }
 
 h3 {
-    font-size: 1.5em; /* Tamaño del encabezado h3 */
+    font-size: 1.5em; 
 }
 
 h4 {
-    font-size: 1.2em; /* Tamaño del encabezado h4 */
+    font-size: 1.2em; 
 }
 
 
@@ -38,9 +38,7 @@ a:hover{
     color: rgb(155, 153, 153);
 }
 
-.titulo{
-    color: white;
-}
+
 body{
     margin: 0;
     text-align: center;
@@ -85,7 +83,7 @@ body p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-gap: 1px;
+    grid-gap: 3px; /*Un hueco de 3px*/
     overflow: hidden;
 }
 
@@ -110,12 +108,12 @@ body p{
     opacity: 1;
 }
 
-.large {
+#grid-container .large {
     grid-column: span 2;
     grid-row: span 2;
 }
 
-.large img{
+#grid-container .large img{
     height: 100%;
 }
 
@@ -127,13 +125,11 @@ header {
     background-color: rgb(234, 229, 229);
     display: flex;
     box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.5);
-  
 }
+
 header .logo{
     float: right;
     margin-right: 10vw;
-
-    
 }
 
 /*Esto ha sido un experimento raro mío... necesitaba pegar el titulo al logo,
@@ -143,7 +139,6 @@ header > div {
     position:relative;
     left: 10%;
     margin-right: 10%;
-    
 }
 
 header h1, header h2, header h3{
