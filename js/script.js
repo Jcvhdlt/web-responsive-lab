@@ -2,6 +2,10 @@
 
 document.addEventListener('DOMContentLoaded', function(){
 
+    // window.onload = function(){
+    //     alert('¡Acepta los cookies!')
+    // }
+
     //Imprimimos por consola el ancho del navegador para las pruebas y controlar bien el responsive
     const anchoNavegador = window.innerWidth;
     console.log("Ancho del navegador:", anchoNavegador);

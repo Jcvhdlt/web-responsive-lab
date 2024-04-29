@@ -5,20 +5,24 @@ body{
 
 
 .equipo{
-   
     width: 90vw;
+    
 }
 
-.equipo div, .opinion {
+.equipo>div, .opinion {
     display: inline-block;
     width : 250px;
     height: auto;
     background-color: #f0f0f0;
-    border-radius: 10px;
     padding: 20px;
     vertical-align: top;
     margin: 10px;
-    
+    transition: all 1.2s ease 0s;
+   
+}
+
+#tesista:hover{
+    transform: rotateY(180deg);
 }
 
 .equipo div img, .opinion img {
@@ -26,7 +30,7 @@ body{
     height: 150px;
     border-radius: 50%; 
     margin-bottom: 20px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease 0s;
 }
 
@@ -36,15 +40,29 @@ body{
     line-height: 1.5;
 }
 
+.equipo h2{
+    margin-top: 30px;
+}
 
+.equipo div h3{
+    border-top: 2px groove white;
+    padding-top: 10px;
+}
 
 /*Para evitar saturar la página de contenido, facilitaremos el acceso a la tesis cambiando el display*/
-#tesista .tesis, #tesista:hover .comentario, #tesista:hover img{
+#tesista .tesis, #tesista:hover .comentario{
     display : none;
 }
 
+.tesis, #tesista:hover img, #tesista:hover h3, #tesista:hover span{
+    transform: rotateY(180deg);
+}
+
+
 #tesista:hover .tesis{
     display: block;
+    font-size: 1.2em;
+    
 }
 
 
@@ -90,6 +108,7 @@ img {
     font-style: italic;
     max-width: 80%;
     background-color: rgb(255, 255, 255);
+    margin-top: 10px;
 }
 @media (max-width: 600px) {
 

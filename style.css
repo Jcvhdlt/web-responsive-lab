@@ -9,24 +9,24 @@
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    color: #190733; 
-    letter-spacing: 1px; 
+    color: #190733; /* Color de los encabezados */
+    letter-spacing: 1px; /* Espaciado entre letras */
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.5em; /* Tamaño del encabezado h1 */
 }
 
 h2 {
-    font-size: 2em; 
+    font-size: 2em; /* Tamaño del encabezado h2 */
 }
 
 h3 {
-    font-size: 1.5em; 
+    font-size: 1.5em; /* Tamaño del encabezado h3 */
 }
 
 h4 {
-    font-size: 1.2em; 
+    font-size: 1.2em; /* Tamaño del encabezado h4 */
 }
 
 
@@ -38,7 +38,9 @@ a:hover{
     color: rgb(155, 153, 153);
 }
 
-
+.titulo{
+    color: white;
+}
 body{
     margin: 0;
     text-align: center;
@@ -83,7 +85,7 @@ body p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-gap: 3px; /*Un hueco de 3px*/
+    grid-gap: 5px;
     overflow: hidden;
 }
 
@@ -94,7 +96,7 @@ body p{
 }
 
 #grid-container div img{
-    max-width: 100%;
+    width: 100%;
     transition: all 0.5s ease 0s;
 }
 
@@ -108,13 +110,13 @@ body p{
     opacity: 1;
 }
 
-#grid-container .large {
+.large {
     grid-column: span 2;
     grid-row: span 2;
 }
 
-#grid-container .large img{
-    max-height: 100%;
+.large img{
+    height: 100%;
 }
 
 header {
@@ -125,11 +127,13 @@ header {
     background-color: rgb(234, 229, 229);
     display: flex;
     box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.5);
+  
 }
-
 header .logo{
     float: right;
     margin-right: 10vw;
+
+    
 }
 
 /*Esto ha sido un experimento raro mío... necesitaba pegar el titulo al logo,
@@ -139,6 +143,7 @@ header > div {
     position:relative;
     left: 10%;
     margin-right: 10%;
+    
 }
 
 header h1, header h2, header h3{
@@ -154,6 +159,7 @@ header h2{
     font-weight: 50;
     font-size: 2em;
 }
+
 
 
 iframe, .maps iframe {
@@ -192,20 +198,20 @@ nav ul li {
     padding: 10px;
     display: inline-block;
     margin: 20px;
-    font-size: 1.2em; 
-    color: #333; 
+    font-size: 1.2em; /* Aumento de tamaño de fuente */
+    color: #333; /* Color de texto - neutro */
     position: relative;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease; /* Transición suave */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit; /* Hereda el color del padre */
 }
 
 nav ul li:hover {
-    font-size: 1.3em; 
-    background-color: #ddd; 
+    font-size: 1.3em; /* Tamaño de fuente aumentado en hover */
+    background-color: #ddd; /* Color de fondo en hover - neutro */
     border-radius: 20px;
 }
 
@@ -270,8 +276,8 @@ nav ul li:hover ul {
 
 /* Estilos del footer */
 footer {
-    background-color: #ddd; 
-    color: #fff; 
+    background-color: #ddd; /* Color de fondo en hover - neutro */
+    color: #fff; /* Texto en color blanco */
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -287,6 +293,7 @@ footer>div{
 }
 
 
+/* Estilos del logo en el footer */
 .logo {
     max-width: 200px;
 }
@@ -303,6 +310,8 @@ footer>div{
     transform:scale(1.2);
 }
 
+
+
 .footer-links a {
     color: rgb(35, 34, 34);
     text-decoration: none;
@@ -313,9 +322,28 @@ footer>div{
 .index-section{
     width: 90vw;
     max-width: 1500px;
+    
 }
 
+.titular-section{
+    width:100%;
+    background-image: url(img/noticias-img/foca.jpg);
+    background-position: 0px -200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
 
+.titular-section h2{
+    width: 80%;
+    font-size: 3em;
+    padding-top:40px;
+    padding-bottom: 30px;
+    font-weight: 150px;
+    color: white;
+    border-bottom: 1px groove rgb(255, 255, 255);
+}
 
 
 #section-1{
@@ -364,26 +392,6 @@ footer>div{
     display: none;
 }
 
-.titular-section{
-    width:100%;
-    background-image: url(img/noticias-img/foca.jpg);
-    background-position: 0px -200px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
-}
-
-.titular-section h2{
-    width: 80%;
-    font-size: 3em;
-    padding-top:40px;
-    padding-bottom: 30px;
-    font-weight: 150px;
-    color: white;
-    border-bottom: 1px groove rgb(255, 255, 255);
-}
-
 #titular-1{
     background-image: url(img/resource/antartica-17.jpg);
 }
@@ -429,7 +437,8 @@ footer>div{
     }
 
     #grid-container div img{
-        max-width: 45vw;
+        max-width: 300px;
+        
     }
 
     #grid-container:hover div img{
@@ -451,6 +460,7 @@ footer>div{
     }
 
     
+
     header h1, header h2, header h3{
         margin-left: 0%;
     }
