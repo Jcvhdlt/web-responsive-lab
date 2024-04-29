@@ -273,8 +273,6 @@ nav ul li:hover ul {
 
 
 
-
-
 /* Estilos del footer */
 footer {
     background-color: #ddd; /* Color de fondo en hover - neutro */
@@ -282,13 +280,17 @@ footer {
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     box-shadow: inset 0 10px 20px -10px rgba(0, 0, 0, 0.5);
-    
-    
+    padding: 50px 0px 50px 0px;
 }
+
+footer>div{
+    border-right: 1px solid rgb(255, 255, 255);
+    padding-right: 3%;
+}
+
 
 /* Estilos del logo en el footer */
 .logo {
@@ -299,6 +301,7 @@ footer {
     max-width: 30px;
     height: auto;
     margin-right: 5px;
+    margin-top: 10px;
     transition: all 0.2 ease 0;
 }
 
@@ -338,7 +341,7 @@ footer {
     padding-bottom: 30px;
     font-weight: 150px;
     color: white;
-    border-bottom: 3px groove rgb(202, 217, 222);
+    border-bottom: 1px groove rgb(255, 255, 255);
 }
 
 
@@ -388,6 +391,15 @@ footer {
     display: none;
 }
 
+#titular-1{
+    background-image: url(img/resource/antartica-17.jpg);
+}
+
+#titular-2{
+    background-image: url(img/resource/antartica-2.jpg);
+}
+
+
 
 
 /* CUANDO EL ANCHO DE LA PANTALLA BAJA DE 800 PÍXELES DE ANCHO*/
@@ -413,6 +425,10 @@ footer {
         margin: 3%;
     }
 
+    footer>div{
+        border-right: none;
+    }
+    
 
     #grid-container{
         display: flex;
@@ -480,12 +496,17 @@ footer {
         text-align: center;
         max-width: 100px;
       }
-
     
     .titular-section{
-        background-position: 0px -200px;
-        /*Al haber cambiado su posición, necesitamos que se repita en la Y, esto está pensado para móvil, no para PC*/
-        background-repeat:repeat-y;
+        background-position-y: 30px;
+      }
+    
+    #titular-2{
+        background-image: url(img/assets/titular-2.jpg);
+    }
+
+    #titular-1{
+        background-image: url(img/assets/titular-1.jpg);
     }
 
 
@@ -493,14 +514,25 @@ footer {
 
 /*Solo para móviles*/
 @media (max-width: 500px) {
+    
+    footer>div{
+        border-right: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    
     .mostrar-moviles{
         display:block;
     }
 
     .mostrar-moviles li ul{
         position: relative;
+       
     }
 
+   
     .ocultar-moviles{
         display:none;
     }
