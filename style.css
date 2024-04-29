@@ -85,7 +85,7 @@ body p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-gap: 5px;
+    grid-gap: 1px;
     overflow: hidden;
 }
 
