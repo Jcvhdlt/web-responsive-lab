@@ -94,7 +94,7 @@ body p{
 }
 
 #grid-container div img{
-    width: 100%;
+    max-width: 100%;
     transition: all 0.5s ease 0s;
 }
 
@@ -114,7 +114,7 @@ body p{
 }
 
 #grid-container .large img{
-    height: 100%;
+    max-height: 100%;
 }
 
 header {
@@ -156,7 +156,6 @@ header h2{
 }
 
 
-
 iframe, .maps iframe {
     height: 250px;
     width: 400px;
@@ -193,20 +192,20 @@ nav ul li {
     padding: 10px;
     display: inline-block;
     margin: 20px;
-    font-size: 1.2em; /* Aumento de tamaño de fuente */
-    color: #333; /* Color de texto - neutro */
+    font-size: 1.2em; 
+    color: #333; 
     position: relative;
-    transition: all 0.3s ease; /* Transición suave */
+    transition: all 0.3s ease; 
 }
 
 nav ul li a {
     text-decoration: none;
-    color: inherit; /* Hereda el color del padre */
+    color: inherit; 
 }
 
 nav ul li:hover {
-    font-size: 1.3em; /* Tamaño de fuente aumentado en hover */
-    background-color: #ddd; /* Color de fondo en hover - neutro */
+    font-size: 1.3em; 
+    background-color: #ddd; 
     border-radius: 20px;
 }
 
@@ -271,8 +270,8 @@ nav ul li:hover ul {
 
 /* Estilos del footer */
 footer {
-    background-color: #ddd; /* Color de fondo en hover - neutro */
-    color: #fff; /* Texto en color blanco */
+    background-color: #ddd; 
+    color: #fff; 
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -288,7 +287,6 @@ footer>div{
 }
 
 
-/* Estilos del logo en el footer */
 .logo {
     max-width: 200px;
 }
@@ -305,8 +303,6 @@ footer>div{
     transform:scale(1.2);
 }
 
-
-
 .footer-links a {
     color: rgb(35, 34, 34);
     text-decoration: none;
@@ -317,28 +313,9 @@ footer>div{
 .index-section{
     width: 90vw;
     max-width: 1500px;
-    
 }
 
-.titular-section{
-    width:100%;
-    background-image: url(img/noticias-img/foca.jpg);
-    background-position: 0px -200px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
-}
 
-.titular-section h2{
-    width: 80%;
-    font-size: 3em;
-    padding-top:40px;
-    padding-bottom: 30px;
-    font-weight: 150px;
-    color: white;
-    border-bottom: 1px groove rgb(255, 255, 255);
-}
 
 
 #section-1{
@@ -387,6 +364,26 @@ footer>div{
     display: none;
 }
 
+.titular-section{
+    width:100%;
+    background-image: url(img/noticias-img/foca.jpg);
+    background-position: 0px -200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.titular-section h2{
+    width: 80%;
+    font-size: 3em;
+    padding-top:40px;
+    padding-bottom: 30px;
+    font-weight: 150px;
+    color: white;
+    border-bottom: 1px groove rgb(255, 255, 255);
+}
+
 #titular-1{
     background-image: url(img/resource/antartica-17.jpg);
 }
@@ -432,8 +429,7 @@ footer>div{
     }
 
     #grid-container div img{
-        max-width: 300px;
-        
+        max-width: 45vw;
     }
 
     #grid-container:hover div img{
@@ -455,7 +451,6 @@ footer>div{
     }
 
     
-
     header h1, header h2, header h3{
         margin-left: 0%;
     }
