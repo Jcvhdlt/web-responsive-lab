@@ -8,24 +8,24 @@
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    color: #190733; /* Color de los encabezados */
-    letter-spacing: 1px; /* Espaciado entre letras */
+    color: #190733; 
+    letter-spacing: 1px; 
 }
 
 h1 {
-    font-size: 2.5em; /* Tamaño del encabezado h1 */
+    font-size: 2.5em; 
 }
 
 h2 {
-    font-size: 2em; /* Tamaño del encabezado h2 */
+    font-size: 2em; 
 }
 
 h3 {
-    font-size: 1.5em; /* Tamaño del encabezado h3 */
+    font-size: 1.5em; 
 }
 
 h4 {
-    font-size: 1.2em; /* Tamaño del encabezado h4 */
+    font-size: 1.2em; 
 }
 
 
@@ -110,10 +110,8 @@ body p{
     text-align: center;
 }
 
-
 .equipo{
     width: 90vw;
-    
 }
 
 .equipo>div, .opinion {
@@ -124,10 +122,8 @@ body p{
     padding: 20px;
     vertical-align: top;
     margin: 10px;
-    transition: all 1.2s ease 0s;
-   
+    transition: all 1.2s ease 0s; 
 }
-
 
 .equipo div img, .opinion img {
     width: 150px;
@@ -151,6 +147,44 @@ body p{
 .equipo div h3{
     border-top: 2px groove white;
     padding-top: 10px;
+}
+
+
+/* Estilos del footer */
+footer {
+    background-color: #ddd; /* Color de fondo en hover - neutro */
+    color: #fff; /* Texto en color blanco */
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    box-shadow: inset 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+    padding: 50px 0px 50px 0px;
+}
+
+footer>div{
+    border-right: 1px solid rgb(255, 255, 255);
+    padding-right: 3%;
+}
+
+
+.footer-social a img {
+    max-width: 30px;
+    height: auto;
+    margin-right: 5px;
+    margin-top: 10px;
+    transition: all 0.2 ease 0;
+}
+
+.footer-social a img:hover {
+    transform:scale(1.2);
+}
+
+.footer-links a {
+    color: rgb(35, 34, 34);
+    text-decoration: none;
+    margin-right: 10px;
 }
 
 .flex-container {
@@ -242,13 +276,14 @@ form input[type="reset"]:hover{
     border-radius: 8px;
 }
 
-
 #grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-gap: 5px;
     overflow: hidden;
+    width: 90%;
+    grid-gap: 5px;
+    margin: auto;
 }
 
 #grid-container div {
@@ -260,25 +295,20 @@ form input[type="reset"]:hover{
 #grid-container div img{
     width: 100%;
     transition: all 0.5s ease 0s;
+    margin: 0px;
 }
 
 #grid-container:hover div img{
     opacity: 0.7;
-   
 }
 
 #grid-container div img:hover{
-    transform: scale(1.1);
     opacity: 1;
 }
 
-.large {
+#grid-container .large {
     grid-column: span 2;
     grid-row: span 2;
-}
-
-.large img{
-    height: 100%;
 }
 
 header {
@@ -289,23 +319,18 @@ header {
     background-color: rgb(234, 229, 229);
     display: flex;
     box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.5);
-  
 }
 header .logo{
     float: right;
     margin-right: 10vw;
-
-    
 }
 
-/*Esto ha sido un experimento raro mío... necesitaba pegar el titulo al logo,
-así que le he desplazado un 10% a la izquierda. Pero como esto provocaba que se
-metiese dentro del logo, le he tenido que ampliar el margen*/
+/*Experimental: se ha desplazado un 10% a la izquierda. Pero como esto provocaba que se
+metiese dentro del logo, se ha ampliado el margen*/
 header > div {
     position:relative;
     left: 10%;
     margin-right: 10%;
-    
 }
 
 header h1, header h2, header h3{
@@ -321,8 +346,6 @@ header h2{
     font-weight: 50;
     font-size: 2em;
 }
-
-
 
 iframe, .maps iframe {
     height: 250px;
@@ -351,15 +374,80 @@ iframe, .maps iframe {
     margin: -5px; 
     transition: all 0.5s ease 0.1s;
 }
+
 .imagenes-instituciones img{
     width:100%;
     height: 100%; 
     object-fit: cover; 
 }
+
 .imagenes-instituciones a img:hover {
         transform:scale(1.2);
 }
 
+.imagenes-somos {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+.imagenes-somos div {
+    width: 30vw;
+    height: 200px;
+    overflow: hidden; 
+    margin: -5px; 
+    transition: all 0.5s ease 0.1s;
+  }
+  
+.imagenes-somos img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.imagenes-somos div:hover{
+    transform: scale(1.3);
+    z-index: 11;
+}
+
+img {
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.index-section h4{
+    font-size: 1.5em;
+    color: rgb(135, 140, 161);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.index-section p{
+    font-size: 1.2em;
+}
+
+.index-section{
+    width: 90vw;
+    max-width: 1500px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.maps{
+    display:flex;
+    justify-content: space-between;
+    margin: 40px 20px 40px 20px;
+  }
+
+.maps iframe {
+    height: 250px;
+    width: 450px;
+    border-radius: 10px;
+  }
 
 nav {
     background-color: rgba(245, 245, 245, 1);
@@ -372,7 +460,6 @@ nav {
     top: 0;
     z-index: 10;
     box-shadow: inset 0 -10px 20px -10px rgba(0, 0, 0, 0.5);
-
 }
 
 nav ul {
@@ -429,8 +516,8 @@ nav ul li:hover ul {
     background-repeat: no-repeat;
     margin-left: 40px;
     margin-top: 50px;
-
 }
+
 .noticia-ol{
     text-align: center;
     list-style: none;
@@ -443,123 +530,7 @@ nav ul li:hover ul {
     background-repeat: no-repeat;
 }
 
-
-
-
-
-
-
-/* Estilos del footer */
-footer {
-    background-color: #ddd; /* Color de fondo en hover - neutro */
-    color: #fff; /* Texto en color blanco */
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    width: 100%;
-    box-shadow: inset 0 10px 20px -10px rgba(0, 0, 0, 0.5);
-    padding: 50px 0px 50px 0px;
-}
-
-footer>div{
-    border-right: 1px solid rgb(255, 255, 255);
-    padding-right: 3%;
-}
-
-
-/* Estilos del logo en el footer */
-.logo {
-    max-width: 200px;
-}
-
-.footer-social a img {
-    max-width: 30px;
-    height: auto;
-    margin-right: 5px;
-    margin-top: 10px;
-    transition: all 0.2 ease 0;
-}
-
-.footer-social a img:hover {
-    transform:scale(1.2);
-}
-
-
-
-.footer-links a {
-    color: rgb(35, 34, 34);
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.imagenes-somos {
-    display: flex;
-    margin-bottom: 30px;
-  }
-  
-  .imagenes-somos div {
-    width: 30vw;
-    height: 200px;
-    overflow: hidden; 
-    margin: -5px; 
-    transition: all 0.5s ease 0.1s;
-  }
-  
-  .imagenes-somos img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-}
-
-.imagenes-somos div:hover{
-    transform: scale(1.3);
-    z-index: 11;
-
-}
-
-img {
-    display: inline-block;
-    width: 350px;
-    height: auto;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.index-section h4{
-    font-size: 1.5em;
-    color: rgb(135, 140, 161);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-}
-
-.index-section p{
-    font-size: 1.2em;
-   
-}
-
-.index-section{
-    width: 90vw;
-    max-width: 1500px;
-    
-}
-
-
-.maps{
-    display:flex;
-    justify-content: space-between;
-    margin: 40px 20px 40px 20px;
-  }
-
-.maps iframe {
-    height: 250px;
-    width: 450px;
-    border-radius: 10px;
-  }
-
-
-  .noticia {
+.noticia {
     min-width: 250px;
     margin: 20px;
     background-color: #fff;
@@ -587,14 +558,6 @@ img {
 .noticia a{
     color: black;
 }
-
-
-
-#section-1{
-    height: 600px;
-    
-}
-
 
 
 .ocultar-big-screen, .mostrar-moviles{
@@ -659,9 +622,11 @@ img {
     float: left;
     margin: 0 10px 20px 10px;
     border-radius: 10px;
-
 }
 
+#section-1{
+    height: 600px;
+}
 
 /*Página de calendario*/
 
@@ -702,7 +667,6 @@ img {
 .table a:hover{
     color: rgba(15, 24, 41, 0.904);
 }
-
 
 
 /*Para evitar saturar la página de contenido, facilitaremos el acceso a la tesis cambiando el display*/
@@ -765,19 +729,12 @@ img {
 
 /* CUANDO EL ANCHO DE LA PANTALLA BAJA DE 800 PÍXELES DE ANCHO*/
 @media (max-width: 1050px) {
-
-    
     aside{
         display: none;
     }
 
     aside.papers li{
         display: inline; 
-       
-    }
-
-    #section-1{
-        height: auto;
     }
 
     .body-index section{
@@ -799,11 +756,17 @@ img {
     #grid-container{
         display: flex;
         flex-wrap: wrap;
+
+    }
+
+    #grid-container div{
+        width: 40vw;
+        margin: 0px;
     }
 
     #grid-container div img{
-        max-width: 300px;
-        
+        width:100%;
+        margin: 0px;
     }
 
     #grid-container:hover div img{
@@ -811,20 +774,10 @@ img {
     }
 
     #grid-container div img:hover{
-        transform: scale(1.1);
         opacity: 1;
     }
 
-   .index-section p, .index-section h4{
-       text-align: left;
-        margin: 2%;
-   }
-
-    #main-sec p{
-        margin: 1%;
-    }
-
-    
+   
 
     header h1, header h2, header h3{
         margin-left: 0%;
@@ -834,13 +787,18 @@ img {
         font-size: 1.5em;
     }
 
+    .index-section p, .index-section h4{
+        text-align: left;
+         margin: 2%;
+    }
+ 
+    #main-sec p{
+         margin: 1%;
+    }
+
     nav{
         position: static;
     }
-
-    
-
-
 
     .ocultar-big-screen{
         display:inline-block;
@@ -848,6 +806,10 @@ img {
 
     .ocultar-small-screen{
         display:none;
+    }
+
+    #section-1{
+        height: auto;
     }
 
     .table{
@@ -877,10 +839,6 @@ img {
     #titular-1{
         background-image: url(img/assets/titular-1.jpg);
     }
-
-    
-
-
 }
 
 /*Solo para móviles*/
@@ -896,7 +854,10 @@ img {
         padding-bottom: 20px;
         padding-top: 20px;
     }
-    
+
+    #grid-container div img{
+        max-width: 100%;
+    }
     
     .mostrar-moviles{
         display:block;
