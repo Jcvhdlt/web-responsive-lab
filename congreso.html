@@ -22,41 +22,38 @@
 </header>
 
 
-<nav>
-    <ul>
-        <a href="index.html">
-            <li> Home </li>
-        </a>
-        <li><a href="quienes-somos.html" style="text-decoration:none;"> Quienes Somos </a>
-            <ul>
-                <a href="equipo.html">
-                    <li> Equipo </li>
-                </a>
-                <a href="proyectos.html">
-                    <li> Investigación </li>
-                </a>
-                <a href="equipo.html">
-                    <li> Colaboradores </li>
-                </a>
+ <!--- NAV (MENÚ PRINCIPAL)-->
+ <nav>
+    <ul class = mostrar-moviles >
+        <li><a href="#" style="text-decoration:none;" id="button-menu"> Menú </a>
+            <ul id="show-menu">
+                <a href="index.html"><li> Home </li></a>
+                <a href="equipo.html"><li> Equipo </li></a>
+                <a href="proyectos.html"><li> Investigación </li></a>
+                <a href="noticias.html"><li> Medios </li></a>
+                <a href="calendario.html"><li> Calendario </li></a>
             </ul>
         </li>
+    </ul>
 
-        <a href="noticias.html">
-            <li> Noticias </li>
-        </a>
-
-        <a href="calendario.html">
-            <li> Calendario </li>
-        </a>
-        <a href="contacto.html">
-            <li> Contacto </li>
-        </a>
+    <ul class="ocultar-moviles">
+        <li><a href="index.html">  Home </a> </li> 
+        <li><a href="quienes-somos.html" style="text-decoration:none;"> Quienes Somos </a>
+            <ul>
+                <a href="equipo.html"><li> Equipo </li></a>
+                <a href="proyectos.html"><li> Investigación </li></a>
+                <a href="equipo.html"><li> Colaboradores </li></a>
+            </ul>
+        </li>
+        <a href="noticias.html"><li> Noticias </li></a>
+        <a href="calendario.html"><li> Calendario </li></a>
+        <a href="contacto.html"><li> Contacto </li></a>
     </ul>
 </nav>
 
 <body class="body-index">
     <h1 class="titulo-noticia">7º Congreso de Oceanografía Física, Metereología y Clima del Pacífico Sur Oriental</h1>
-    <div class="img-congreso">
+    <div class="noticia-img">
 
     </div>
     <section class="index-section">
@@ -84,7 +81,7 @@
         <p>
             Las áreas temáticas clave que se abordarán durante el Congreso incluyen:
         </p>
-        <ol type="1" class="ol-congreso">
+        <ol type="1" class="noticia-ol">
             <li><h3>Climatología y Cambio Global</h3> </li>
             <p>Análisis de patrones climáticos en la región del Pacífico Sur Oriental.
                 Impactos del cambio climático en los sistemas oceánicos y atmosféricos locales.</p>

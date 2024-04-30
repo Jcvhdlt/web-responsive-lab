@@ -53,6 +53,36 @@ body p{
     margin:50px;
 }
 
+.body-index{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.body-index aside {
+    list-style-type: circle;
+    float: right;
+    margin: 10px;
+    margin-right: 5%;
+    padding: 10px;
+    vertical-align: top;
+    max-width: 25%;
+    height: auto;
+    width: auto;
+    background-color:rgb(234, 229, 229);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.body-index h1{
+    margin-top:20px;
+}
+
+.body-index section{
+    margin: 10px;
+    width: 65%;
+    display: inline-block;
+    padding-top: 30px;
+}
 
 #button-show{
     text-align: center;
@@ -79,6 +109,139 @@ body p{
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
 }
+
+
+.equipo{
+    width: 90vw;
+    
+}
+
+.equipo>div, .opinion {
+    display: inline-block;
+    width : 250px;
+    height: auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    vertical-align: top;
+    margin: 10px;
+    transition: all 1.2s ease 0s;
+   
+}
+
+
+.equipo div img, .opinion img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease 0s;
+}
+
+.equipo div p, .opinion p{
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.equipo h2{
+    margin-top: 30px;
+}
+
+.equipo div h3{
+    border-top: 2px groove white;
+    padding-top: 10px;
+}
+
+.flex-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.formulario h2{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 40px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+form input[type="email"],
+form input[type="text"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+form textarea {
+    resize: vertical;
+}
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+form input[type="reset"]{
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+form input[type="reset"]:hover{
+    background-color: brown;
+}
+
+.fotoform {
+    float: left;
+    margin-right: 20px;
+}
+.fotoform img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 
 #grid-container {
     display: grid;
@@ -172,6 +335,31 @@ iframe, .maps iframe {
     margin-bottom: 40px;
 }
 
+.instituciones-titulo {
+    text-align: center;
+    text-align: 32px;
+}
+.imagenes-instituciones {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.imagenes-instituciones div {
+    width: 30vw;
+    height: 200px;
+    overflow: hidden;
+    margin: -5px; 
+    transition: all 0.5s ease 0.1s;
+}
+.imagenes-instituciones img{
+    width:100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+.imagenes-instituciones a img:hover {
+        transform:scale(1.2);
+}
+
 
 nav {
     background-color: rgba(245, 245, 245, 1);
@@ -231,6 +419,22 @@ nav ul li:hover ul {
     display: block
 }
 
+.noticia-img {
+    background-image: url(img/noticias-img/congreso.jpg);
+    display: flex;
+    align-items: center;
+    height: 50vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
+.noticia-ol{
+    text-align: center;
+    list-style: none;
+}
 
 .img-noticias{
     background-image: url(../img/noticias-img/fondo-noticias.jpeg);
@@ -241,35 +445,7 @@ nav ul li:hover ul {
 
 
 
-.body-index{
-   
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
 
-.body-index aside {
-    list-style-type: circle;
-    float: right;
-    margin: 10px;
-    margin-right: 5%;
-    padding: 10px;
-    vertical-align: top;
-    max-width: 25%;
-    height: auto;
-    width: auto;
-    background-color:rgb(234, 229, 229);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-
-
-.body-index section{
-    margin: 10px;
-    width: 65%;
-    display: inline-block;
-    padding-top: 30px;
-}
 
 
 
@@ -317,37 +493,38 @@ footer>div{
     margin-right: 10px;
 }
 
-
-.index-section{
-    width: 90vw;
-    max-width: 1500px;
-    
+.imagenes-somos {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .imagenes-somos div {
+    width: 30vw;
+    height: 200px;
+    overflow: hidden; 
+    margin: -5px; 
+    transition: all 0.5s ease 0.1s;
+  }
+  
+  .imagenes-somos img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 
-.titular-section{
-    width:100%;
-    background-image: url(img/noticias-img/foca.jpg);
-    background-position: 0px -200px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
+.imagenes-somos div:hover{
+    transform: scale(1.3);
+    z-index: 11;
+
 }
 
-.titular-section h2{
-    width: 80%;
-    font-size: 3em;
-    padding-top:40px;
-    padding-bottom: 30px;
-    font-weight: 150px;
-    color: white;
-    border-bottom: 1px groove rgb(255, 255, 255);
-}
-
-
-#section-1{
-    height: 600px;
-    
+img {
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .index-section h4{
@@ -360,6 +537,68 @@ footer>div{
 .index-section p{
     font-size: 1.2em;
    
+}
+
+.index-section{
+    width: 90vw;
+    max-width: 1500px;
+    
+}
+
+
+.maps{
+    display:flex;
+    justify-content: space-between;
+    margin: 40px 20px 40px 20px;
+  }
+
+.maps iframe {
+    height: 250px;
+    width: 450px;
+    border-radius: 10px;
+  }
+
+
+  .noticia {
+    min-width: 250px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 470px;
+    height: 440px;
+    flex: 0 1 calc(30% - 40px);  /*El tamaño inicial del elemento es de 30%. Y se le restan 40px para darle espacio adicional a dicho elemento*/
+    /*Por otro lado, flex 1 indica que el elemento puede contraerse para ajustarse en el espacio disponible dentro del contenedor flex*/
+    margin-bottom: 100px;
+}
+
+.noticia img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+
+.noticia h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+    text-align: center;
+}
+
+.noticia a{
+    color: black;
+}
+
+
+
+#section-1{
+    height: 600px;
+    
+}
+
+
+
+.ocultar-big-screen, .mostrar-moviles{
+    display: none;
 }
 
 .papers{
@@ -387,8 +626,111 @@ footer>div{
     color: rgb(107, 107, 107);
 }
 
-.ocultar-big-screen, .mostrar-moviles{
-    display: none;
+.proyecto1{
+    font-family: "Roboto", sans-serif;
+}
+.proyecto1 h1{
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.proyecto1 h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.proyecto1 h3{
+    text-align: center;
+    font-size: 26px;
+}
+.proyecto {
+    display: inline-block;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0PX;
+    text-align: left;
+    font-size: 18px;
+}
+.proyecto img {
+    min-width: 200px;
+    width: 30%;
+    float: left;
+    margin: 0 10px 20px 10px;
+    border-radius: 10px;
+
+}
+
+
+/*Página de calendario*/
+
+.table{
+    text-align: center;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.table h2{
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.table {
+  
+    border-collapse: collapse;
+ 
+  }
+
+.table th, td {
+    border: 1px solid black;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+.table  th {
+    background-color: rgba(15, 24, 41, 0.904);
+    color: white;
+    font-size: 22px;
+  }
+
+.table a{
+    color: black;
+}
+
+.table a:hover{
+    color: rgba(15, 24, 41, 0.904);
+}
+
+
+
+/*Para evitar saturar la página de contenido, facilitaremos el acceso a la tesis cambiando el display*/
+#tesista .tesis, #tesista:hover .comentario{
+    display : none;
+}
+
+.tesis, #tesista:hover img, #tesista:hover h3, #tesista:hover span{
+    transform: rotateY(180deg);
+}
+
+
+#tesista:hover{
+    transform: rotateY(180deg);
+}
+
+#tesista:hover .tesis{
+    display: block;
+    font-size: 1.2em;
+}
+
+#tesista .comentario{
+    font-size:1.2em;
+    padding:5px;
+    font-style: italic;
+    max-width: 80%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
 }
 
 #titular-1{
@@ -400,6 +742,25 @@ footer>div{
 }
 
 
+.titular-section{
+    width:100%;
+    background-image: url(img/noticias-img/foca.jpg);
+    background-position: 0px -200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.titular-section h2{
+    width: 80%;
+    font-size: 3em;
+    padding-top:40px;
+    padding-bottom: 30px;
+    font-weight: 150px;
+    color: white;
+    border-bottom: 1px groove rgb(255, 255, 255);
+}
 
 
 /* CUANDO EL ANCHO DE LA PANTALLA BAJA DE 800 PÍXELES DE ANCHO*/
@@ -423,6 +784,11 @@ footer>div{
         width: 90%;
         display: block;
         margin: 3%;
+    }
+
+    .equipo div, .estudiantes div{
+        width:60vw; 
+       
     }
 
     footer>div{
@@ -472,6 +838,9 @@ footer>div{
         position: static;
     }
 
+    
+
+
 
     .ocultar-big-screen{
         display:inline-block;
@@ -509,6 +878,8 @@ footer>div{
         background-image: url(img/assets/titular-1.jpg);
     }
 
+    
+
 
 }
 
@@ -533,6 +904,11 @@ footer>div{
 
     .mostrar-moviles li ul{
         position: relative;
+    }
+
+    .noticia {
+        width: 90%;
+        height: auto; /* Altura automática para dispositivos móviles */
     }
 
     .ocultar-moviles{
