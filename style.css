@@ -506,6 +506,10 @@ nav ul li:hover ul {
     display: block
 }
 
+.nivel_estudios{
+    display: inline-block;
+    margin-left: 40px;
+}
 .noticia-img {
     background-image: url(img/noticias-img/congreso.jpg);
     display: flex;
