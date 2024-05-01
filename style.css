@@ -610,9 +610,9 @@ nav ul li:hover ul {
 .proyecto {
     display: inline-block;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
-    padding: 0PX;
+    padding: 0px 30px 0px 30px;
     text-align: left;
     font-size: 18px;
 }
@@ -623,6 +623,8 @@ nav ul li:hover ul {
     margin: 0 10px 20px 10px;
     border-radius: 10px;
 }
+
+
 
 #section-1{
     height: 600px;
