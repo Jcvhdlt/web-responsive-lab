@@ -1,5 +1,0 @@
-Enlace a github:
-https://fjzamora93.github.io/web-responsive-lab/
-
-Es posible que el github se actualice al seguir trabajando con el LApab tras la entrega del tabajo.
-(Aunque las actualizaciones acordadas se refieren al contenido, no al diseño).
