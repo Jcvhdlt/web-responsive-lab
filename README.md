@@ -1,9 +1,4 @@
 # Web Responsive Lab
-
-> Un proyecto de maquetación web para la asignatura Lenguaje de Marcas, enfocado en la creación de una landing page totalmente responsive utilizando HTML5 semántico, CSS3 moderno y JavaScript para la interactividad del usuario.
-
-![Captura de pantalla del proyecto](./screenshot.png) <!-- Opcional: añade una captura de pantalla del sitio y nómbrala 'screenshot.png' -->
-
 ---
 
 ## 🚀 Sobre el Proyecto
